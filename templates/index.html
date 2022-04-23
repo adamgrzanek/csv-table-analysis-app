@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+<h1>Upload new file</h1>
+
+<div class="">
+    <form class="" action="" method="post" enctype="multipart/form-data">
+          <input type="file" name="csvfile" value="">
+          <input type="submit" name="" value="Submit">
+    </form>
+</div>
+
+<p>----------------------------------------------------------------</p>
+
+<h1>Analyzed files:</h1>
+   {% for i in content %}
+        <li><a href="http://127.0.0.1:5000/results/{{i}}">{{i}}</a></li>
+    {% endfor %}
+
+</body>
+</html>
